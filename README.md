@@ -101,7 +101,7 @@ Your response:
 
 ## 🛣️ Future Roadmap
 
-- [ ] Add a continuous execution loop with an **Exit** option.
+
 - [ ] Implement inter-account funds transfer.
 - [ ] Password/PIN hashing using `hashlib` for enhanced security.
 - [ ] Mini-statement / Transaction history logging.
