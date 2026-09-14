@@ -180,31 +180,45 @@ user = Bank()
 
 
 
+user = Bank()
 
-print("Press 1 for Creating your account")
-print("Press 2 to widthdraw money from  youraccount")
-print("Press 3 check balance of your account")
-print("Press 4 for Updating details of your account")
-print("Press 5 for Delete your account")
-print("Press 6 to Deposit money ")
-print("Press 7 for details of your account")
+while True:
+    print("\n========== BANK MENU ==========")
+    print("Press 1 for Creating your account")
+    print("Press 2 to Withdraw money from your account")
+    print("Press 3 to Check balance of your account")
+    print("Press 4 to Update details of your account")
+    print("Press 5 to Delete your account")
+    print("Press 6 to Deposit money")
+    print("Press 7 for Details of your account")
+    print("Press 8 to Exit")
 
-task = int(input("Your response: "))
+    task = int(input("\nYour response: "))
 
-if (task == 1):
-    user.createAccount()
+    if task == 1:
+        user.createAccount()
 
-if(task ==2):
-    user.withdraw()
-if(task ==3):
-    user.checkBalance()
-if(task == 4):
-    user.userUpdate()
-if(task == 5):
-    user.deleteAccount()
-if(task == 6):
-    user.deposit()
-if(task == 7):
-    user.details()
+    elif task == 2:
+        user.withdraw()
 
+    elif task == 3:
+        user.checkBalance()
 
+    elif task == 4:
+        user.userUpdate()
+
+    elif task == 5:
+        user.deleteAccount()
+
+    elif task == 6:
+        user.deposit()
+
+    elif task == 7:
+        user.details()
+
+    elif task == 8:
+        print("Thank you for using our bank!")
+        break
+
+    else:
+        print("Invalid choice! Please try again.")
